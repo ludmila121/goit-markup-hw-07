@@ -284,7 +284,7 @@
     <section class="clients" >
       <div class="clients_container container">
         <h2 class="clients_title">Постійні кліенти</h2>
-        <ul class="client_list list">
+        <ul class="clients_list list">
           <li><a class="clients_link" href=""><svg class="clients_icon" width="106" height="60">
                 <use href="img/icons.svg#logo-1"></use>
               </svg></a></li>
@@ -375,17 +375,17 @@
     <!--Backdrop-->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-        <button class="close-btn" type="button" data-modal-close>
-          <svg class="close-btn-icon" width="20" height="20">
+      <div class="backdrop_modal">
+        <p class="backdrop_title">Залиште свої дані, ми вам передзвонимо</p>
+        <button class="backdrop__btn" type="button" data-modal-close>
+          <svg class="modal_icon" width="20" height="20">
             <use href="img/icons.svg#close-black-18dp-2"></use>
           </svg>
         </button>
-        <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
+        <form class="modal_form" name="signup_form" autocomplete="on" novalidate>
        
-        <div class="form-field">  
-          <label for="user-name">
+        <div class="form">  
+          <label class="form_label">
             <span class="form-content">Ім'я</span> 
             <input class="form-label" type="name" name="name" id="user-name" required  minlength="2"/>
             <svg class="form-icon" width="18" height="18">
@@ -393,8 +393,8 @@
             </svg>
           </label>
         </div>
-        <div class="form-field">
-          <label for="tel">
+        <div class="form">
+          <label class="form_label">
             <span class="form-content">Телефон</span>
             <input class="form-label" type="tel" name="tel" id="tel" required  minlength="12" maxlength="12">
             <svg class="form-icon" width="18" height="18">
@@ -402,8 +402,8 @@
             </svg>
            </label>
         </div>
-        <div class="form-field">
-          <label for="mail">
+        <div class="form">
+          <label class="form_label">
             <span class="form-content">Пошта</span>
             <input class="form-label" type="email" name="mail" id="mail" required>
             <svg class="form-icon" width="18" height="18">
@@ -412,8 +412,8 @@
            
           </label>
         </div>
-        <div class="form-field ">
-          <label for="text">
+        <div class="form ">
+          <label class="form_label">
             <span class="form-content">Коментар</span>
             <textarea class="form-text" type="text" name="text" placeholder="Введіть текст"></textarea>
 

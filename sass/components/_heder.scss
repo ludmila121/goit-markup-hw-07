@@ -1,47 +1,46 @@
 .header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+    
+    &_container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &_nav {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+    &_group {
+        display: flex;
+    }
+    &_item:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    &_contact {
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    
+        color: var(--title-text-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
 
-.header_container {
-    display: flex;
-    align-items: center;
-}
-
-.header_nav {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-.header_group {
-    display: flex;
-}
-.header_item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header_contact {
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-
-    color: var(--title-text-color);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header_contact:hover,
-.header_contact:focus {
-    color: var(--accent-color);
-}
+}    
 
 .link_icon {
     fill: currentColor;
     margin-right: 10px;
-}
-
-.link_icon:hover,
-.link_icon:focus {
-    color: var(--accent-color)
+    &:hover,
+    &:focus {
+        color: var(--accent-color)
+    }
 }
